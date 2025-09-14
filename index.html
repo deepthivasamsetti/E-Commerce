@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduMart - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">EduMart</div>
+    <input type="text" placeholder="Search for courses, books..." class="search-box" id="searchInput" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="account.html">Account</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Empower Your Learning</h1>
+    <p>Discover top courses, books, and tools for success.</p>
+    <a href="products.html" class="btn">Shop Now</a>
+  </section>
+
+  <section class="categories">
+    <h2>Top Categories</h2>
+    <div class="category-grid">
+    <div class="category-card" onclick="filterByCategory('Development')">Development</div>
+    <div class="category-card" onclick="filterByCategory('Design')">Design</div>
+    <div class="category-card" onclick="filterByCategory('Certifications')">Certifications</div>
+    <div class="category-card" onclick="filterByCategory('Tools')">Tools</div>
+  </section>
+
+  <section class="search-results" id="search-results" style="display:none;">
+    <h2>Search Results</h2>
+    <div class="product-grid" id="home-product-list"></div>
+  </section>
+
+  <section class="newsletter">
+    <h2>Subscribe for Deals</h2>
+    <input type="email" placeholder="Enter your email" />
+    <button>Subscribe</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EduMart. All rights reserved.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+
+
+</body>
+</html>
